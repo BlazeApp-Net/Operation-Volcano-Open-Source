@@ -4,7 +4,7 @@ from fastapi.responses import RedirectResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 from nicegui import Client, app, ui
 import bcrypt  # Import bcrypt for hashing passwords
-from app import *
+from application import *
 
 # A dictionary to store usernames and hashed passwords
 passwords = {'test1': bcrypt.hashpw('test1'.encode(), bcrypt.gensalt()).decode(),
